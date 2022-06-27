@@ -15,7 +15,7 @@ namespace Ecommerce.Persons.gRPC.Milagros_Salas.Services
         {
             return Task.FromResult(new HelloReply
             {
-                Message = "Hello " + string.Concat(request.Nombre, ";", request.Apellido)
+                Message = "Hello " + string.Concat(request.Nombre, ";", request.Apellido) //
             });
         }
     }
