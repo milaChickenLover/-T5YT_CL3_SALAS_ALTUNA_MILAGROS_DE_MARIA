@@ -1,0 +1,34 @@
+syntax = "proto3";
+option csharp_namespace = "Ecommerce.Persons.gRPC.Milagros_Salas";
+package empleados;
+
+service EmpleadoP{
+	rpc Listar(EmptyEmpl) returns (Empleados);
+	rpc Obtener(EmpleadoId) returns (Empleado);
+	rpc Crear(Empleado) returns (RespuestaEmpl);
+}
+
+message EmptyEmpl{}
+
+message RespuestaEmpl{
+	string mensaje = 1;
+}
+
+message EmpleadoId{
+	string id = 1;
+}
+
+message Empleado {
+	string id = 1;
+	string nombres = 2;
+	string apellidos = 3;
+	string usuario = 4;
+	string password = 5;
+	string anoRegistro = 6;
+	string activo = 7;
+	string sucursal = 8;
+}
+
+message Empleados {
+	repeated Empleado items = 1;
+}

@@ -1,0 +1,34 @@
+syntax = "proto3";
+option csharp_namespace = "Ecommerce.Persons.gRPC.Milagros_Salas";
+package clientes;
+
+service ClienteP{
+	rpc Listar(Empty) returns (Clientes);
+	rpc Obtener(ClienteId) returns (Cliente);
+	rpc Crear(Cliente) returns (Respuesta);
+}
+
+message Empty{}
+
+message Respuesta{
+	string mensaje = 1;
+}
+
+message ClienteId{
+	string id = 1;
+}
+
+message Cliente {
+	string id = 1;
+	string nombres = 2;
+	string apellidos = 3;
+	string usuario = 4;
+	string password = 5;
+	string fechaRegistro = 6;
+	string activo = 7;
+	string ciudad = 8;
+}
+
+message Clientes {
+	repeated Cliente items = 1;
+}
