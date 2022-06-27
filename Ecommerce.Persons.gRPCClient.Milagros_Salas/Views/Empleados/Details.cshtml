@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Ecommerce.Persons.gRPCClient.Milagros_Salas.Models.EmpleadoModel
+@{
+    ViewData["Title"] = "Mostrar Empleado";
+}
+
+<h1>Empleado</h1>
+
+<div class="container bg-light my-2 py-2 border border-1">
+    <h3>Nombres:     @Model.Nombres</h3>
+    <h3>Apellidos:   @Model.Apellidos</h3>
+    <h3>Usuario:     @Model.Usuario</h3>
+    <h3>AñoRegistro: @Model.AnoRegistro</h3>
+    <h3>Ciudad:      @Model.Sucursal</h3>
+    <h3>Activo:      @Model.Activo</h3>
+</div>

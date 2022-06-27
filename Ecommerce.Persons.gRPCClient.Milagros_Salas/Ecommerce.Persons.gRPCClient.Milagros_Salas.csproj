@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.46.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.46.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\Ecommerce.Persons.gRPC.Milagros_Salas\Protos\clientes.proto" GrpcServices="Client">
+      <Link>Protos\clientes.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\Ecommerce.Persons.gRPC.Milagros_Salas\Protos\empleados.proto" GrpcServices="Client">
+      <Link>Protos\empleados.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
+</Project>

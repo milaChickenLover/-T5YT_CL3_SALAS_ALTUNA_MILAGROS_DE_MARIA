@@ -34,6 +34,7 @@ namespace Ecommerce.Persons.gRPC.Milagros_Salas.Services
             EmpleadosDAO modelDao = new EmpleadosDAO();
             RespuestaEmpl respuesta = new RespuestaEmpl();
             Empleado model = new Empleado();
+            model.Id = request.Id;
             model.Nombres = request.Nombres;
             model.Apellidos = request.Apellidos;
             model.Usuario = request.Usuario;

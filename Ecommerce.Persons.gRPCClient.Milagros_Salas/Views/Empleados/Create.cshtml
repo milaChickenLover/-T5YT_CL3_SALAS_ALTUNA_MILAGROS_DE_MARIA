@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Ecommerce.Persons.gRPCClient.Milagros_Salas.Models.EmpleadoModel
+@{
+    ViewData["Title"] = "Agregar Empleado";
+}
+<h1>Agregar Empleado</h1>
+
+<div class="container bg-light my-2 py-2 border border-1">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group row my-2">
+                <div class="col-2">
+                    <label asp-for="Nombres" class="control-label"></label>
+                    <input asp-for="Nombres" class="form-control" type="text" />
+                    <span asp-validation-for="Nombres" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="Apellidos" class="control-label"></label>
+                    <input asp-for="Apellidos" class="form-control" type="text" />
+                    <span asp-validation-for="Apellidos" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="Usuario" class="control-label"></label>
+                    <input asp-for="Usuario" class="form-control" type="text" />
+                    <span asp-validation-for="Usuario" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" type="password" maxlength="9" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>           
+            <div class="form-group row my-2">
+                <div class="col-2">
+                    <label asp-for="AnoRegistro" class="control-label"></label>
+                    <input asp-for="AnoRegistro" class="form-control" type="date" />
+                    <span asp-validation-for="AnoRegistro" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="Sucursal" class="control-label"></label>
+                    <input asp-for="Sucursal" class="form-control" />
+                    <span asp-validation-for="Sucursal" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row my-2">
+                <div class="col-2">
+                    <input type="submit" value="Guardar" class="btn btn-primary"/>
+                </div>
+                <div class="col-2">
+                    <a asp-action="Index" class="btn btn-warning">Regresar al Listado</a>
+                </div>
+            </div>
+        </form>
+</div>
+
+<div>@ViewBag.mensaje</div>

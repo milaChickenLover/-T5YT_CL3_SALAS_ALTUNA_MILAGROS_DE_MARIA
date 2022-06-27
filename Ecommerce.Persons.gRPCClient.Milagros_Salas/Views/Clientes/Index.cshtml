@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<Ecommerce.Persons.gRPCClient.Milagros_Salas.Models.ClienteModel>
+@{
+    ViewData["Title"] = "Listar Clientes";
+}
+<h1>Listar Clientes</h1>
+
+<a asp-action="Create" class="btn btn-primary btn-sm"><i class="bi bi-person-plus"></i> Nuevo Cliente</a>
+<table class="table table-bordered border border-2 table-hover">
+    <tr>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Usuario</th>
+        <th>FechaRegistro</th>
+        <th>Activo</th>
+        <th>Ciudad</th>
+        <th>Acciones</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Nombres</td>
+            <td>@item.Apellidos</td>
+            <td>@item.Usuario</td>
+            <td>@item.FechaRegistro</td>
+            <td>@item.Activo</td>
+            <td>@item.Ciudad</td>
+            <td>
+                <a asp-area="" asp-controller="Clientes" asp-action="Details" class="btn btn-success btn-sm" asp-route-Id="@item.Id">Ver</a>
+            </td>
+        </tr>
+    }
+
+</table>

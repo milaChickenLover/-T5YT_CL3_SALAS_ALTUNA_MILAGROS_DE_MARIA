@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Persons.gRPC.Milagros_Salas", "Ecommerce.Persons.gRPC.Milagros_Salas\Ecommerce.Persons.gRPC.Milagros_Salas.csproj", "{A90F7328-35A6-4F9A-85DE-F02A06B94D86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Persons.gRPCClient.Milagros_Salas", "Ecommerce.Persons.gRPCClient.Milagros_Salas\Ecommerce.Persons.gRPCClient.Milagros_Salas.csproj", "{BEC5EA85-213C-45A9-A4C6-1A4F2546CAD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A90F7328-35A6-4F9A-85DE-F02A06B94D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A90F7328-35A6-4F9A-85DE-F02A06B94D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A90F7328-35A6-4F9A-85DE-F02A06B94D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC5EA85-213C-45A9-A4C6-1A4F2546CAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC5EA85-213C-45A9-A4C6-1A4F2546CAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC5EA85-213C-45A9-A4C6-1A4F2546CAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC5EA85-213C-45A9-A4C6-1A4F2546CAD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
